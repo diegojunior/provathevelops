@@ -31,13 +31,19 @@ router.post("/users", function(req, res){
   var formData = req.body.user;
   User.create(formData , function(err, user){
     if (err) {
-      console.log("DEU RUIM NA CRIAÇÃO DO USER!!");
       console.log(err);
       res.render("new");
     } else {
-      console.log("NEW USER!");
       res.redirect("/");
     }
+  });
+});
+
+//GET ONE USER (JSON)
+router.get('/users/:id', function(req, res) {
+  User.find({_id: req.params.id}).lean().exec(function(e, docs){
+    res.json(docs);
+    res.end();
   });
 });
 
@@ -57,7 +63,6 @@ router.put("/users/:id", function(req, res){
   User.findByIdAndUpdate(req.params.id, req.body.user, function(err, updateUser){
     if (err) {
       console.log(err);
-      console.log("ERRO NO UPDATE!");
     }
       res.redirect("/");
   });
@@ -67,7 +72,7 @@ router.put("/users/:id", function(req, res){
 router.delete("/users/:id",function(req, res){
   User.findByIdAndRemove(req.params.id, function(err){
     if (err) {
-      console.log("DEU ERRO PRA DELETAR!!!!!!");
+      console.log(err);
       res.redirect("/");
     } else {
       res.redirect("/");

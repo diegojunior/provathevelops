@@ -7,6 +7,10 @@
         <p><%= user.last_name %></p>
         <p><%= user.personal_phone %></p>
 
+        <form  action="/users/<%= user._id %>" target="_blank" method="GET">
+              <button>Usuário Específico (JSON)</button>
+        </form>
+
         <form  action="/users/<%= user._id %>/edit" method="GET">
               <button>Editar</button>
         </form>
