@@ -39,7 +39,7 @@ Once the server is running, it is possible to access the applications in:
 http://localhost:3000
 
 Use Name: 12345 and Pass: 12345 to access the application, the Name and Pass can be changed insite the app.js file (line 16):
-"""
+```
 app.use(function (req, res, next) {
   var credentials = auth(req);
   if (!credentials || credentials.name !== '12345' || credentials.pass !== '12345') {
@@ -50,7 +50,7 @@ app.use(function (req, res, next) {
     next();
   }
 });
-"""
+```
 
 Using the functions of the application will only be possible after the database is initiated.
 
