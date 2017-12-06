@@ -16,7 +16,7 @@ npm install
 
 ## Starting Database
 
-To start  the database, go to the folloing folder using the command line:
+To start the database, go to the following folder using the command line:
 ~/MongoDB/Server/"Version"/bin
 Where ~ is the place where MongoDB is installed.
 
@@ -35,7 +35,7 @@ npm start
 
 ### Accessing application
 
-Once the server is running it is possible to access the applications in:
+Once the server is running, it is possible to access the applications in:
 http://localhost:3000
 
 Using the functions of the application will only be possible after the database is initiated.
@@ -52,5 +52,5 @@ npm run fakeUsers
 Inside the "scriptEx JSDoc" folder, it is possible to see the documentation of the fakeUsers script.
 
 ## API documentation in Swagger
-The API documentation can be accessed here:
+You can access the API documentation here:
 https://app.swaggerhub.com/apis/Andrefff17/provathevelops/1.0.0#/
