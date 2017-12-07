@@ -1,13 +1,14 @@
 <% include partials/header %>
 
-<h1>Editar Usuário (<%= user.first_name %> <%= user.last_name %>)</h1>
+<h1>Edit User (<%= user.first_name %> <%= user.last_name %>)</h1>
 
-<form action="/users/<%= user._id %>?_method=PUT" method="POST">
-  <input type="text" name="user[email]" placeholder="Email">
-  <input type="text" name="user[first_name]" placeholder="First Name">
-  <input type="text" name="user[last_name]" placeholder="Last Name">
-  <input type="text" name="user[personal_phone]" placeholder="Personal Phone">
-  <button>Editar Usuário</button>
+<form action="/users/<%= user._id %>?_method=PUT" method="POST"></p>
+  <p><input type="text" name="user[email]" placeholder="Email"></p>
+  <p><input type="text" name="user[first_name]" placeholder="First Name"></p>
+  <p><input type="text" name="user[last_name]" placeholder="Last Name"></p>
+  <p><input type="text" name="user[personal_phone]" placeholder="Personal Phone"></p>
+  <p><button>Edit</button></p>
 </form>
+<p><a href="/">Back</a></p>
 
 <% include partials/footer %>

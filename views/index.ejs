@@ -8,20 +8,20 @@
         <p><%= user.personal_phone %></p>
 
         <form  action="/users/<%= user._id %>" target="_blank" method="GET">
-              <button>Usuário Específico (JSON)</button>
+              <button>Get User (JSON)</button>
         </form>
 
         <form  action="/users/<%= user._id %>/edit" method="GET">
-              <button>Editar</button>
+              <button>Edit</button>
         </form>
 
         <form  action="/users/<%= user._id %>?_method=DELETE" method="POST">
-              <button>Deletar</button>
+              <button>Delete</button>
         </form>
 
       <% }); %>
     </div>
-    <a href="/users/" target="_blank">Todos os Usuários (JSON)</a>
-    <a href="/users/new">Novo Usuário</a>
+    <p><a href="/users/" target="_blank">All Users (JSON)</a></p>
+    <p><a href="/users/new">New User</a></p>
 
 <% include partials/footer %>
