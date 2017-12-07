@@ -62,9 +62,6 @@ It is possible to generate 50 fake users with the following command line:
 npm run fakeUsers
 ```
 
-### Documentation
-Inside the "scriptEx JSDoc" folder, it is possible to see the documentation of the fakeUsers script.
-
 ## API documentation in Swagger
 You can access the API documentation here:
 https://app.swaggerhub.com/apis/Andrefff17/provathevelops/1.0.0#/
