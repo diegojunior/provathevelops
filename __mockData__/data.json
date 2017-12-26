@@ -1,0 +1,24 @@
+{
+	"list": [{
+		"id": 1,
+		"email": "andre@usp.com.br",
+		"first_name": "André",
+		"last_name": "Faria Formagio Fonseca",
+		"personal_phone": "11-1111-1111"
+	},
+	{	
+		"id": 2,
+		"email": "diego@usp.com.br",
+		"first_name": "Diego",
+		"last_name": "Junior da Silva Pereira",
+		"personal_phone": "12-2222-2222"
+	},
+	{
+		"id": 3,
+		"email": "mateus@usp.com.br",
+		"first_name": "Mateus",
+		"last_name": "Faria Pereira",
+		"personal_phone": "12-3333-3333"
+	}]
+	
+}
